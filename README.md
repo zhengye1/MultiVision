@@ -1,0 +1,1 @@
+This is the project that build during plurasight tutorial "Create web application with NodeJS and AngularJS using MEAN"
