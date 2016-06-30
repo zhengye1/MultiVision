@@ -10,6 +10,13 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.14.0",
-    "jade": "^1.11.0"
+    "jade": "^1.11.0",
+    "body-parser":"^1.15.2",
+    "morgan":"^1.7.0",
+    "multer":"^1.1.0",
+    "stylus":"^0.54.5"
+  },
+  "devDependencies": {
+    "bower": "^1.7.9"
   }
 }

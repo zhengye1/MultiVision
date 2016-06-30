@@ -1,0 +1,17 @@
+{
+  "name": "multivision",
+  "description": "Extreme Tech Training",
+  "main": "index.js",
+  "authors": [
+    "Vincent"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/zhengye1/MultiVision",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.0.0",
+    "toastr": "^2.1.2",
+    "angular-resource": "^1.5.7",
+    "angular-route": "^1.5.7"
+  }
+}
