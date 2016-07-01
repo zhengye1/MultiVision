@@ -26,7 +26,13 @@ app.use(stylus.middleware(
 ));
 app.use(express.static(__dirname + '/public'));
 
-mongoose.connect('mongodb://localhost:27017/multivision');
+if (env === 'development') {
+    console.log('connecting to local mongodb');
+    mongoose.connect('mongodb://localhost:27017/multivision');
+}else{
+    console.log('connecting to mongolab');
+    mongoose.connect('mongodb://zhengye1:Yukirin0715@ds011715.mlab.com:11715/heroku_lxsrj2t3');
+}
 
 var db = mongoose.connection;
 
@@ -53,11 +59,11 @@ app.get('/api', function(req, res){
 
 app.get('*', function(req, res) {
     res.render('index', {
-        mongoMessage: mongoMessage
+            mongoMessage: mongoMessage
         }
     )
 });
 
-var port = 3030;
+var port = process.env.PORT || 3030;
 app.listen(port);
 console.log('Listening on port ' + port + '...');
