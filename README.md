@@ -2,11 +2,11 @@ This is the project that build during plurasight tutorial "Create web applicatio
 Prerequisite:
 ========================
 1. Install mongodb
-2. Active mongodb service by typing 'mongod' if you using local
+2. Active mongodb service by typing '''mongod''' if you using local
 
 
 Run the following command on local machine:
 ========================
-'bower isntall'
-'npm install'
-'nodemon server.js'
+'''bower isntall'''
+'''npm install'''
+'''nodemon server.js'''
